@@ -9,6 +9,11 @@ export default {
         image: String,
         backgroundColor: String,
         width: Number
+    },
+    methods: {
+        shopNow(){
+            alert(`Let's shop: ${this.title}`);
+        }
     }
 }
 </script>
@@ -17,7 +22,7 @@ export default {
         <h2 class="title">{{ title }}</h2>
         <!-- <button class="shop-btn">Shop Now →</button> -->
         <img :src="image" alt="banner image" class="promotion-img" :style="{ width: width + 'px'}">
-        <Btn/>
+        <Btn @click="shopNow()"/>
     </button>
 </template>
 

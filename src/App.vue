@@ -1,11 +1,13 @@
 <script>
+import Btn from './components/Btn.vue';
 import Category from './components/Category.vue';
 import Promotion from './components/Promotion.vue';
 
 export default {
   components: {
     Category,
-    Promotion
+    Promotion,
+    Btn
   },
   data() {
     return {
@@ -90,6 +92,9 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    
   }
 }
 </script>
