@@ -2,7 +2,9 @@
     <div class="list-cate">
         <h3>{{ name }}</h3>
         <div class="group">
-            <p v-for="(item, index) in group" :key="index" @click="$emit('group-select', item)">{{ item }}</p>
+            <p v-for="(item, index) in group" :key="index" @click="$emit('group-select', item)">
+            {{ item }}
+            </p>
         </div>
 
     </div>

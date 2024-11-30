@@ -32,7 +32,6 @@ export const useProductStore = defineStore('product', {
     setSelectedGroup(group) {
       this.selectedGroupName = group;
     },
-
     async fetchCategories() {
       try {
         const response = await axios.get("http://localhost:3000/api/categories");
