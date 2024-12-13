@@ -5,6 +5,7 @@ import Category from "@/components/Category.vue";
 import Promotion from "@/components/Promotion.vue";
 import MenuComponent from "@/components/MenuComponent.vue";
 import Product from "@/components/Product.vue";
+import ShowCase from "@/components/ShowCase.vue";
 
 const productStore = useProductStore();
 const filteredCategories = computed(() => productStore.filteredCategories);
@@ -39,8 +40,11 @@ const products = computed(() => {
 </script>
 
 <template>
-  <div id="app">
+  <div class="app">
     <!-- === Feature Category === -->
+    <main>
+      <ShowCase />
+    </main>
     <div>
       <MenuComponent
       :name = "categoryTitle"
@@ -87,10 +91,9 @@ const products = computed(() => {
 </template>
 
 <style scoped>
-#app {
-  width: 2850px;
+.app {
+  width: 96vw;
   height: auto;
-  padding-bottom: 1000px;
   display: flex;
   flex-direction: column;
 }

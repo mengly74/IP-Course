@@ -19,14 +19,15 @@ export default {
 }
 </script>
 <template>
+    <router-link to="/DetailPage" class="menu-item">
     <button class="promotion-card" :style="{ color: color }" >
         <h2 class="title">{{ title }}</h2>
         <!-- <button class="shop-btn">Shop Now →</button> -->
         <img :src="image" alt="banner image" class="promotion-img" :style="{ width: width + 'px'}">
         <Btn @click="ShopNow()"/>
     </button>
+</router-link>
 </template>
-
 
 <style scoped>
 .promotion-card {

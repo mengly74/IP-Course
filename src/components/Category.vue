@@ -1,9 +1,12 @@
 <template>
-    <button class="category" :style="{ color: color }">
-        <img :src="image" alt="promotion image" class="promotion-img">
-        <h3 class="name">{{ name }}</h3>
-        <p class="productCount">{{ productCount }} items</p>
-    </button>
+    <router-link to="/PageCategory" class="category" >
+        <button :style="{ color: color }">
+            <img :src="image" alt="promotion image" class="promotion-img">
+            <h3 class="name">{{ name }}</h3>
+            <p class="productCount">{{ productCount }} items</p>
+        </button>
+    </router-link>
+    
 </template>
 
 <script>

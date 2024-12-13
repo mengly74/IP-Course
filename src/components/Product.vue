@@ -1,10 +1,9 @@
 <template>
+  <router-link to="/DetailPage" class="menu-item">
   <div class="product-list">
     <div class="product" v-for="product in products" :key="product.id">
-      <!-- Product Tag -->
       <div class="product-tag"></div>
 
-      <!-- Product Image -->
       <div class="img">
         <img :src="product.image" alt="" class="product-image" />
       </div>
@@ -55,6 +54,8 @@
       </div>
     </div>
   </div>
+  </router-link>
+  
 </template>
 
 <script>
