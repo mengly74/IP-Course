@@ -1,44 +1,46 @@
 <template>
-  <div class="container">
-    <Header />
-    <div class="main-content">
-      <Menu />
-      <router-view /> 
-    </div>
-    <Footer />
+  <div>
+    <header>
+      <div>Header</div>
+      <nav>
+        <router-link to="/page1">Page 1</router-link>
+        <router-link to="/page2">Page 2</router-link>
+        <router-link to="/page3">Page 3</router-link>
+      </nav>
+    </header>
+
+    <main>
+      <router-view />
+    </main>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
   </div>
 </template>
 
-<script>
-import Header from "./components/Header.vue";
-import Menu from "./components/Menu.vue";
-import Footer from "./components/Footer.vue";
-
-export default {
-  components: {
-    Header,
-    Menu,
-    Footer,
-  },
-};
-</script>
-
-<style>
-.container {
+<style scoped>
+header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  width: 600px;
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  height: 500px;
-  width: 750px;
+  flex-direction: row;
+  gap: 270px;
 }
 
-.main-content {
-  display: flex;
-  flex: 1;
+header nav a {
+  margin: 0 15px;
+  font-size: 16px;
 }
 
-router-view {
-  flex: 1;
-  padding: 20px;
+footer {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  width: 600px;
 }
 </style>

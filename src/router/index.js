@@ -1,23 +1,43 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Page1 from "../components/Page1.vue";
-import Page2 from "../components/Page2.vue";
-import Page3 from "../components/Page3.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import Page1 from '../views/Page1.vue';
+import Page2 from '../views/Page2.vue';
+import Page3 from '../views/Page3.vue';
+import Section from '../components/Section.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Page1",
+    path: '/',
+    redirect: '/page1',
+  },
+  {
+    path: '/page1',
     component: Page1,
+    children: [
+      {
+        path: 'section/:id',
+        component: Section,
+      },
+    ],
   },
   {
-    path: "/page2",
-    name: "Page2",
+    path: '/page2',
     component: Page2,
+    children: [
+      {
+        path: 'section/:id',
+        component: Section,
+      },
+    ],
   },
   {
-    path: "/page3",
-    name: "Page3",
+    path: '/page3',
     component: Page3,
+    children: [
+      {
+        path: 'section/:id',
+        component: Section,
+      },
+    ],
   },
 ];
 
@@ -27,4 +47,3 @@ const router = createRouter({
 });
 
 export default router;
-

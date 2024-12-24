@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <aside>
         <div>Menu</div>
       <ul class="menu-list">
@@ -32,4 +32,4 @@
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
   }
-  </style>  
+  </style>   -->

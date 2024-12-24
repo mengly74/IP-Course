@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <footer>
       Footer
     </footer>
@@ -16,4 +16,4 @@
     border: 1px solid black;
     text-align: center;
   }
-  </style>  
+  </style>   -->

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="header">
         <h1>Home</h1>
         <div class="item">
@@ -46,4 +46,4 @@
     font-weight: bold;
   }
   </style>
-  
+   -->
